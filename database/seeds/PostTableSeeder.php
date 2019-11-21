@@ -10,15 +10,57 @@ class PostTableSeeder extends Seeder
     public function run()
     {
         $first_post = new Post();
-        $first_post->user_id = 4;
-        $first_post->title = "Testing Laravel CMS";
-        $first_post->body = "With the help of Laravel I was able to achieve all this. Laravel includes a simple method of seeding your database with test data using seed classes. All seed classes are stored in the database/seeds directory. Seed classes may have any name you wish, but probably should follow some sensible convention, such as UsersTableSeeder, etc. By default, a DatabaseSeeder class is defined for you. From this class, you may use the  call method to run other seed classes, allowing you to control the seeding order.";
+        $first_post->user_id = 1;
+        $first_post->title = "Post1";
+        $first_post->body = " Description of Post1";
         $first_post->save();
 
         $second_post = new Post();
-        $second_post->user_id = 4;
-        $second_post->title = "Database: Migrations";
-        $second_post->body = "Migrations are like version control for your database, allowing your team to easily modify and share the application's database schema. Migrations are typically paired with Laravel's schema builder to easily build your application's database schema. If you have ever had to tell a teammate to manually add a column to their local database schema, you've faced the problem that database migrations solve.";
+        $second_post->user_id = 1;
+        $second_post->title = "Post2";
+        $second_post->body = " Description of Post 2";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post3";
+        $second_post->body = " Description of Post 3";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post4";
+        $second_post->body = " Description of Post 4";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post5";
+        $second_post->body = " Description of Post 5";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post6";
+        $second_post->body = " Description of Post 6";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post7";
+        $second_post->body = " Description of Post 7";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post8";
+        $second_post->body = " Description of Post 8";
+        $second_post->save();
+
+        $second_post = new Post();
+        $second_post->user_id = 1;
+        $second_post->title = "Post9";
+        $second_post->body = " Description of Post 9";
         $second_post->save();
     }
 }

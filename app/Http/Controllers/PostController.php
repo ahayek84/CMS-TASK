@@ -121,7 +121,7 @@ class PostController extends Controller
 
     public function all()
     {
-        $posts = Post::latest()->paginate(5);
+        $posts = Post::all();
         return view('landing', compact('posts'));
     }
 

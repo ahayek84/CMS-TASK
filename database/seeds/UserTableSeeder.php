@@ -16,32 +16,34 @@ class UserTableSeeder extends Seeder
         $role_employer = Role::where('name', 'employer')->first();
         $role_admin = Role::where('name', 'admin')->first();
 
-        $student = new User();
-        $student->name = 'Olaniyi Student';
-        $student->email = 'olaniyistudent@mytest.com';
-        $student->password = Hash::make('olaniyistudent');
-        $student->save();
-        $student->roles()->attach($role_student);
-        
+        $admin = new User();
+        $admin->name = 'Abed Admin';
+        $admin->email = 'AbedA@mytest.com';
+        $admin->password = Hash::make('abeda');
+        $admin->save();
+        $admin->roles()->attach($role_admin);
+
         $employee = new User();
-        $employee->name = 'Olaniyi Employee';
-        $employee->email = 'olaniyiemployee@mytest.com';
-        $employee->password = Hash::make('olaniyiemployee');
+        $employee->name = 'Abed Employee';
+        $employee->email = 'AbedE@mytest.com';
+        $employee->password = Hash::make('Abede');
         $employee->save();
         $employee->roles()->attach($role_employee);
+
+        $student = new User();
+        $student->name = 'Abed Student';
+        $student->email = 'abeds@mytest.com';
+        $student->password = Hash::make('abeds');
+        $student->save();
+        $student->roles()->attach($role_student);
+
         
         $employer = new User();
-        $employer->name = 'Olaniyi Employer';
-        $employer->email = 'olaniyiemployer@mytest.com';
-        $employer->password = Hash::make('olaniyiemployer');
+        $employer->name = 'Abed Employer';
+        $employer->email = 'AbedER@mytest.com';
+        $employer->password = Hash::make('abeder');
         $employer->save();
         $employer->roles()->attach($role_employer);
 
-        $admin = new User();
-        $admin->name = 'Olaniyi Admin';
-        $admin->email = 'olaniyiadmin@mytest.com';
-        $admin->password = Hash::make('olaniyiadmin');
-        $admin->save();
-        $admin->roles()->attach($role_admin);
     }
 }

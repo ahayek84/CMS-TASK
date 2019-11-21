@@ -28,7 +28,7 @@ class TaskController extends Controller
         ]);
     }
 
-    public function index2()
+    public function show()
     {
         // paginate the authorized user's tasks with 5 per page
         $tasks = Auth::user()

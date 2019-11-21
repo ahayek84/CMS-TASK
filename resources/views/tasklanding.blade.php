@@ -4,7 +4,7 @@
 <div class="container">
 <div class="row align-items-center">
   <div class="col-md-8 mx-auto">
-    <h1 class="my-4 text-center">Single Task List </h1>
+    <h1 class="my-4 text-center">My Tasks </h1>
 
     @foreach ($tasks as $task)
     <div class="card mb-4">
@@ -29,10 +29,10 @@
           <form method="POST" action="{{ route('tasks.update', $task->id) }}">
             @csrf
             @method('PATCH')
-            <button type="submit" class="btn btn-primary">Complete Task</button>
+            <button type="submit" class="btn btn-danger">Complete Task</button>
           </form>
         @else
-          <button type="button" disabled class="btn btn-success">Task Completed</button>
+          <button type="button" disabled class="btn btn-primary">Task Completed</button>
         @endif
         </div>
       </div>

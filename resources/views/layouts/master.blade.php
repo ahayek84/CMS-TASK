@@ -8,7 +8,7 @@
     <meta name="author" content="Neo Ighodaro">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Task CMS</title>
+    <title>My Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <style> 
@@ -22,12 +22,12 @@
     }
     </style>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligh fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Task CMS | </a>
-        <a class="navbar-brand" href="/">Task Posts | </a>
-        <a class="navbar-brand" href="/viewtasks">Single Tasks</a>
+        <a class="navbar-brand" href="/">All Posts | </a>
+        <a class="navbar-brand" href="/viewtasks">My Tasks</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
              @if (Route::has('login'))
