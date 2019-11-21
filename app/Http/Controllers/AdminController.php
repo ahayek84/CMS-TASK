@@ -11,19 +11,19 @@ class AdminController extends Controller
     public function index()
     {
         {
-            if (request()->user()->hasRole('admin')) {
+            if (request()->user()->hasRole('admin role')) {
                 return view('admin.dashboard');
             }
 
-            if (request()->user()->hasRole('employer')) {
+            if (request()->user()->hasRole('employer role')) {
                 return view('admin.dashboard');
             }
 
-            if (request()->user()->hasRole('student')) {
+            if (request()->user()->hasRole('student role')) {
                 return redirect('/home');
             }
 
-            if (request()->user()->hasRole('employee')) {
+            if (request()->user()->hasRole('employee role')) {
                 return redirect('/home');
             }
         }

@@ -11,7 +11,7 @@
       <hr>
     <ul>
 
-       <li><a style="color: white" href="/admin/dashboard">All TASK POSTS</a></li>
+       <li><a style="color: white" href="/admin/dashboard">My Tasks</a></li>
         <br>
         <li> <router-link :to="{ name: 'create', params: { userId } }">CREATE NEW TASK POST </router-link></li>
         <br>

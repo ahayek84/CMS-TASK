@@ -11,10 +11,10 @@ class EmployerController extends Controller
     public function index()
     {
         {
-            if (request()->user()->hasRole('admin')) {
+            if (request()->user()->hasRole('admin role')) {
                 return view('employer.dashboard');
             }
-            if (request()->user()->hasRole('user')) {
+            if (request()->user()->hasRole('user role')) {
                 return redirect('/home');
             }
         }
